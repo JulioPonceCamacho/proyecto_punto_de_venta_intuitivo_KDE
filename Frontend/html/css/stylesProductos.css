@@ -1,0 +1,255 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: white;
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+}
+header{
+    padding: 10px;
+    margin: auto;
+    background-color: rgba(88,127,252,1);
+    color: white;
+    font-weight: bolder;
+}
+p{
+    text-indent: 10px;
+}
+
+
+
+.waves{
+    position: relative;
+
+}
+.cabecera{
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    width: 90%;
+    align-items: center;
+}
+.headElement{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+.panelButton{
+    font-size: large;
+    min-height: 40px;
+    border-radius: 20px;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: none;
+    color: rgba(0,0,0,0.7);
+    background-color: white;
+    transition: 0.3s;
+}
+.panelButton:hover{
+    transform: scale(1.05);
+    color: rgba(0,0,0,0.8);
+    box-shadow: 5px 5px rgba(0,0,0,0.1);
+}
+.Headertitle{
+    padding-left: 20px;
+    text-shadow: 5px 5px rgba(0,0,0,0.1);
+}
+
+.containerGral{
+    padding: 10px;
+    margin: auto;
+    width: 80%;
+    background-color: white;
+    border-radius: 30px;
+}
+
+.title{
+    font-size: xx-large;
+    color: rgba(88,127,252,1);
+    padding-left: 25px;
+    font-weight: bold;
+}
+
+.elementGral{
+    background-color: rgba(88,127,252,0.1);
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    transition: 0.3s;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.elementGral:hover{
+    transform: scale(1.02);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.description{
+    font-size: large;
+}
+
+.informe{
+    width: 100%;
+    margin: auto;
+}
+.plusInfo, .boton{
+    display: block;
+    margin: auto;
+    min-height: 40px;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: rgba(0,0,0,0.7);
+    background-color: rgba(88,127,252,0.5);
+    font-size: large;
+    transition: 0.3s;
+}
+.plusInfo:hover, .boton:hover{
+    transform: scale(1.05);
+    box-shadow: 5px 5px rgba(0,0,0,0.1);
+}
+.footherContainer{
+    background-color: rgba(88,127,252,1);
+    font-size: large;
+    min-height: 100px;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
+    color: white;
+}
+
+.botonera{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 60%;
+    margin: auto;
+    justify-items: center;
+    align-items: center;
+    color: rgba(0,0,0,0.7);
+}
+.rojo{
+    background-color: rgba(255,0,0,0.4);
+}
+.verde{
+    background-color: rgba(6, 228, 95, 0.4);
+}
+.content-table{
+    font-size: 0.9em;
+    max-width: 80%;
+    border-collapse: collapse;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    transition: 0.3s;
+    color: rgba(0,0,0,0.7);
+    margin: auto;
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+.content-table tfoot tr.Total{
+    font-weight: bold;
+    text-align: right;
+}
+.content-table thead tr{
+    background-color: rgba(88,127,252,0.5);
+    text-align: center;
+    color: white;
+    font-size: large;
+}
+
+.content-table th,
+.content-table td{
+    padding: 12px 15px;
+}
+
+.content-table tbody tr{
+    border-bottom: 2px solid rgba(0,0,0,0.1);
+    transition: all 0.3s;
+}
+.content-table tbody tr:nth-of-type(even){
+    background-color: rgba(0,0,0,0.05);
+}
+.content-table tbody tr:hover{
+    color: rgba(88,127,252,1);
+    background-color: rgba(88,127,252,0.15);
+}
+.content-table tfoot tr{
+    background-color: rgba(88,127,252,0.05);
+    font-size: small;
+    transition: 0.3s;
+}
+.content-table tfoot tr:hover{
+    background-color: rgba(88,127,252,0.5);
+    color: white;
+    /*font-weight: bold;*/
+}
+.content-table tbody tr:last-of-type{
+    border-bottom: 2px solid rgba(88,127,252,0.5);
+}
+
+/*
+------- POP UP menus
+*/
+.overlay{
+    background-color: rgba(0,0,0,0.4);
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+}
+.overlay.active{
+    visibility: visible;
+}
+
+.BackgroudPop{
+    background-color: white;
+    width: 60%;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+.PanelAdd, .PanelRemove, .PanelEdit{
+    background-color: rgba(88,127,252,0.1);
+    padding: 15px;
+}
+.Inputs{
+    display: block;
+    margin: auto;
+    width: 80%;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: large;
+    border-radius: 10px;
+    border: none;
+    min-height: 30px;
+    color: rgba(0,0,0,0.7);
+}
+.btn-cerrar-popup{
+    font-size: 16px;
+    line-height: 16px;
+    color: rgba(0,0,0,0.7);
+    display: inline;
+    justify-self: right;
+    transition: 0.3s;
+}
+.cerrar{
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    justify-content: right;
+}
+.PanelAdd .btn-cerrar-popup:hover{
+    color: rgba(255,0,0,0.4);
+}

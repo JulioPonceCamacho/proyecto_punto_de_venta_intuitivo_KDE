@@ -1,0 +1,6 @@
+colores base
+ FF8692 rgba(255,134,146,1)
+E5EAF5 rgba(229,234,245,1)
+92A5FD rgba(146,165,253,1)
+ 587FFC rgba(88,127,252,1)
+  1E1E5D rgba(30,30,93,1)

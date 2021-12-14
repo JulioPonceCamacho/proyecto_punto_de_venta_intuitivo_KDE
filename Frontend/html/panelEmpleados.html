@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/stylesEmpleados.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins" rel="stylesheet">
+    <link rel="stylesheet" href="css/stylesEmpleados.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <title>Administra tus empleados</title>
+</head>
+<body>
+    <header>
+        <div class="cabecera">
+            <div class="headerClass">
+                <h1>Administra tus Empleados</h1>
+            </div>
+            <div class="menu">
+                <a href="panelPrincipal.html">
+                    <button class="btnMenu">Regresar</button>
+                </a>
+            </div>
+        </div>
+    </header>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 150 1440 150">
+        <path fill="#a7a7a7" fill-opacity="1" d="M0,160L40,181.3C80,203,160,245,240,261.3C320,277,400,267,480,256C560,245,640,235,720,240C800,245,880,267,960,256C1040,245,1120,203,1200,197.3C1280,192,1360,224,1400,240L1440,256L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"></path>
+    </svg>
+    <section class="instruct">
+        <div class="title">
+            <p>¿Cómo Administrar a mis empleados?</p>
+        </div>
+        <div class="content">
+            <p>
+                Esta sección está encargada de la parte de administración de tus empleados, se muestra 
+                una sola tabla en la que podrás encontrar información relacionada con los permisos y 
+                accesos que cada uno de tus empleados tiene sobre tu punto de venta.
+            </p>
+        </div>
+    </section>
+    <div class="apartados">
+        <div class="tarjeta">
+            <div class="titleTar">
+                Permisos
+            </div>
+            <div class="contentTar">
+                <p>Se refiere a los permisos que como empleados tienen sobre el software, es decir:</p>
+                <ul>
+                    <li class="element">¿Tiene permitido el acceso a las estadísticas?</li>
+                    <li class="element">¿Tiene permitido el acceso a los proveedores?</li>
+                    <li class="element">¿Tiene permitido el acceso a los productos?</li>
+                    <li class="element"><strong>¿Tiene permitido modificar los puntos anteriores?</strong></li>
+                </ul>
+            </div>
+        </div>
+        <div class="tarjeta">
+            <div class="titleTar">
+                Datos Personales
+            </div>
+            <div class="contentTar">
+                <p>Hace referencia a la información de nuestro empleado</p>
+                <ul>
+                    <li class="element">Nombre</li>
+                    <li class="element">Apellidos</li>
+                    <li class="element">Edad</li>
+                    <li class="element">Sexo</li>
+                    <li class="element">Estado Civil</li>
+                    <li class="element">Domicilio</li>
+                </ul>
+            </div>
+        </div>
+        <div class="tarjeta">
+            <div class="titleTar">
+                Datos Adicionales
+            </div>
+            <div class="contentTar">
+                <p>Se encuentran datos como:</p>
+                <ul>
+                    <li class="element">Fecha de Contratación</li>
+                    <li class="element">Nombre</li>
+                    <li class="element">ID</li>
+                    <li class="element">Sueldo</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <section class="table">
+        <table>
+            <thead>
+                <tr>
+                    <th>Permisos</th>
+                    <th>Datos Personales</th>
+                    <th>Datos Adicionales</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Administrativo</td>
+                    <td>
+                        <ul>
+                            <li><strong>Nombre:</strong> Angel</li>
+                            <li><strong>Apellidos:</strong> Maldonado García</li>
+                            <li><strong>Edad:</strong> 22 años</li>
+                            <li><strong>Sexo:</strong> Masculino</li>
+                            <li><strong>Estado Civil:</strong> Soltero</li>
+                            <li><strong>Domicilio:</strong> Ixtlahuaca, Edo. Mex.</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li><strong>Fecha de Contratación:</strong> 11 de enero de 2015</li>
+                            <li><strong>Nombre:</strong> Angel Maldonado García</li>
+                            <li><strong>ID:</strong> 2018150480548</li>
+                            <li><strong>Sueldo:</strong> 1093 USD</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Empleado</td>
+                    <td>
+                        <ul>
+                            <li><strong>Nombre:</strong> José Angel</li>
+                            <li><strong>Apellidos:</strong> Cabrera González</li>
+                            <li><strong>Edad:</strong> 25 años</li>
+                            <li><strong>Sexo:</strong> Masculino</li>
+                            <li><strong>Estado Civil:</strong> Casado</li>
+                            <li><strong>Domicilio:</strong> Ixtlahuaca, Edo. Mex.</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li><strong>Fecha de Contratación:</strong> 16 de Marzo de 1016</li>
+                            <li><strong>Nombre:</strong> José Angel Cabrera González</li>
+                            <li><strong>ID:</strong> 2018150480549</li>
+                            <li><strong>Sueldo:</strong> 832 USD</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Empleado</td>
+                    <td>
+                        <ul>
+                            <li><strong>Nombre:</strong> María</li>
+                            <li><strong>Apellidos:</strong> Alanuza Esquivel</li>
+                            <li><strong>Edad:</strong> 29 años</li>
+                            <li><strong>Sexo:</strong> Femenino</li>
+                            <li><strong>Estado Civil:</strong> Soltero</li>
+                            <li><strong>Domicilio:</strong> Ixtlahuaca, Edo. Mex.</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li><strong>Fecha de Contratación:</strong> 16 de Marzo de 1016</li>
+                            <li><strong>Nombre:</strong> María Alanuza Esquivel</li>
+                            <li><strong>ID:</strong> 2018150480550</li>
+                            <li><strong>Sueldo:</strong> 832 USD</li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="credits">
+                <p>Author: KDE Binario</p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/indexEmpleados.js"></script>
+</body>
+</html>

@@ -1,0 +1,181 @@
+*{
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+header{
+    padding: 0;
+    margin: 0;
+    background-color: rgba( 167, 167, 167,1);
+}
+header .headerClass h1{
+    margin: 0;
+    display: inline;
+    color: white;
+    font-weight: bold;
+    text-shadow: 3px 3px rgba(0,0,0,0.1);
+    font-size: xx-large;
+    padding: 10px;
+}
+.cabecera{
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    width: 90%;
+    padding: 15px;
+    padding-top: 30px;
+    margin: auto;
+}
+header .btnMenu{
+    justify-self: end;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: large;
+    color: white;
+    background-color: rgba(0,0,0,0.5);
+    height: 50px;
+    border: none;
+    border-radius: 35px;
+    transition: 0.3s ease all;
+}
+header .btnMenu:hover{
+    transform: scale(1.05);
+    box-shadow: 5px 5px rgba(0,0,0,0.1);
+}
+.instruct{
+    padding: 15px;
+}
+.title{
+    font-size: xx-large;
+    color: rgba(0,0,0,0.8);
+    font-weight: bolder;
+}
+.titleTar{
+    font-size: large;
+    color: rgba(0,0,0,0.8);
+    font-weight: bold;
+}
+.tarjeta{
+    margin: 0;
+    padding: 25px;
+    background-color: rgba( 167, 167, 167,0.5);
+}
+.tarjeta:nth-child(odd){
+    background-color: rgba( 167, 167, 167,0.3);
+}
+.apartados{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+}
+p{
+    text-indent: 5px;
+}
+.element{
+    color: rgba(0,0,0,0.5);
+}
+.table{
+    width: 100%;
+}
+table{
+    width: 90%;
+    margin: auto;
+    border-collapse: collapse;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size: medium;
+    color: rgba(0,0,0,0.8);
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    background-color: rgba( 167, 167, 167,0.3);
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.table thead{
+    background-color: rgba( 167, 167, 167,0.5);
+    font-size: large;
+}
+table li{
+    list-style-type: none;
+    color: rgba(0,0,0,0.5);
+}
+table li strong::before{
+    content: "\2022";
+}
+table th,
+table td{
+    padding: 12px 15px;
+}
+table thead{
+    border-bottom: 4px solid rgba(0,0,0,0.1);
+}
+table tbody tr{
+    border-bottom: 4px solid rgba(0,0,0,0.1);
+    transition: 0.3s ease all;
+}
+table tbody tr:last-of-type{
+    border-bottom: 4px solid rgba( 167, 167, 167,0.5);
+}
+table tbody tr:hover{
+    background-color: rgba(88,127,252,0.1);
+}
+table tbody tr td:first-of-type, table strong{
+    font-weight: bold;
+    color: rgba(0,0,0,0.5);
+}
+footer{
+    width: 100%;
+    height: 120px;
+    background-color: rgba( 167, 167, 167,1);
+    color: rgba(0,0,0,0.5);
+    font-size: large;
+    font-weight: bold;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+.credits{
+    margin: auto;
+}
+
+/*
+Tarjetas de Instrucciones
+*/
+@media(max-width: 720px){
+    
+    .cabecera{
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 90%;
+        gap: 15px;
+        margin: auto;
+        justify-items: center;
+    }
+    .apartados{
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+    .table{
+        font-size: 2vw;
+        width: 80%;
+        padding: 0;
+        overflow-x: auto;
+        margin: auto;
+    }
+    table thead{
+        font-size: 4vw;
+    };
+    table th,
+    table td{
+        padding: 0;
+    }
+}
+
